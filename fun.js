@@ -67,15 +67,15 @@ const carCollection = {
 // console.log(carCollection);
 
 const updateData = (id, prop, value) => {
-  if (prop !== 'tracks' && value) {
+  if (prop !== 'options' && value) {
     carCollection[id][prop] = value;
   }
 
-  if (prop === 'tracks' && !carCollection[id].hasOwnProperty(prop)) {
+  if (prop === 'options' && !carCollection[id].hasOwnProperty(prop)) {
     carCollection[id][prop] = [value];
   }
 
-  if (prop === 'tracks' && carCollection[id].hasOwnProperty(props)) {
+  if (prop === 'options' && value) {
     carCollection[id][prop].push(value);
   }
 
