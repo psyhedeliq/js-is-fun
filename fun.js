@@ -29,7 +29,6 @@ const animalBreed = {
 };
 
 const checkAnimalBreed = checkProp => {
-  // Your Code Here
   if (animalBreed.hasOwnProperty(checkProp) === true) {
     return animalBreed[checkProp];
   } else {
@@ -43,7 +42,7 @@ console.log(checkAnimalBreed('bird'));
 
 // ************** Car Collection Exercise ************** //
 // You are given a JSON object representing a part of your car collection. Each car has several properties and a unique id number as its key. Not all cars have complete information. Write a function which takes a car id (like 1), a property prop (like "brand" or "options"), and a value (like "leather seats") to modify the data in this collection.
-
+/*
 const carCollection = {
   '1': {
     brand: 'BMW',
@@ -97,5 +96,27 @@ console.log(
     'air conditioning',
     'leather seats',
     'heated windshield'
+  ])
+);
+*/
+
+// ************** Nesting For Loops ************** //
+
+const multiplyAll = arr => {
+  let product = 1;
+
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      product *= arr[i][j];
+    }
+  }
+  return product;
+};
+
+console.log(
+  multiplyAll([
+    [1, 2],
+    [3, 4],
+    [5, 6, 7]
   ])
 );
