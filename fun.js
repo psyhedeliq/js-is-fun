@@ -101,7 +101,7 @@ console.log(
 */
 
 // ************** Nesting For Loops ************** //
-
+/*
 const multiplyAll = arr => {
   let product = 1;
 
@@ -120,3 +120,16 @@ console.log(
     [5, 6, 7]
   ])
 );
+*/
+
+// ************** Do...While Loops ************** //
+
+const myArray = [];
+let i = 10;
+
+do {
+  myArray.push(i);
+  i++;
+} while (i < 10);
+
+console.log(myArray);
