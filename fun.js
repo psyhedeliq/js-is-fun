@@ -123,7 +123,7 @@ console.log(
 */
 
 // ************** Do...While Loops ************** //
-
+/*
 const myArray = [];
 let i = 10;
 
@@ -133,3 +133,17 @@ do {
 } while (i < 10);
 
 console.log(myArray);
+*/
+
+// ************** Recursion ************** //
+// Write a recursive function, sum(arr, n), that returns the sum of the elements from 0 to n inclusive in an array arr.
+
+const sum = (arr, n) => {
+  if (n <= 0) {
+    return arr[0];
+  } else {
+    return sum(arr, n - 1) + arr[n];
+  }
+};
+
+console.log(sum([2, 3, 4], 1));
