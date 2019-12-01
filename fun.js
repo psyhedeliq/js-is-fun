@@ -150,7 +150,7 @@ console.log(sum([2, 3, 4], 1));
 */
 
 // ************** Profile Lookup ************** //
-
+/*
 const contacts = [
   {
     firstName: 'Akira',
@@ -190,3 +190,12 @@ const lookupProfile = (name, prop) => {
 };
 
 console.log(lookupProfile('Harry', 'number'));
+*/
+
+// ****** Generate Random Whole Numbers within a Range ****** //
+
+const randomRange = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+console.log(randomRange(8, 22));
