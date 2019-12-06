@@ -202,8 +202,15 @@ console.log(randomRange(8, 22));
 */
 
 // ****** parseInt Function ****** //
-
+/*
 const convertToInteger = str => parseInt(str);
 
 console.log(convertToInteger('006'));
 console.log(convertToInteger('7.5'));
+*/
+
+// ****** ternary Operator ****** //
+
+const checkEqual = (a, b) => (a === b ? 'Equal' : 'Not Equal');
+
+console.log(checkEqual(1, 2));
