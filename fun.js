@@ -193,9 +193,17 @@ console.log(lookupProfile('Harry', 'number'));
 */
 
 // ****** Generate Random Whole Numbers within a Range ****** //
-
+/*
 const randomRange = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
 console.log(randomRange(8, 22));
+*/
+
+// ****** parseInt Function ****** //
+
+const convertToInteger = str => parseInt(str);
+
+console.log(convertToInteger('006'));
+console.log(convertToInteger('7.5'));
