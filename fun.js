@@ -210,7 +210,18 @@ console.log(convertToInteger('7.5'));
 */
 
 // ****** ternary Operator ****** //
-
+/*
 const checkEqual = (a, b) => (a === b ? 'Equal' : 'Not Equal');
 
 console.log(checkEqual(1, 2));
+*/
+
+// ****** Multiple Conditional (Ternary) Operators ****** //
+
+const typeOfNum = num => {
+  return num > 0 ? 'Positive' : num < 0 ? 'Negative' : 'Zero';
+};
+
+// console.log(typeOfNum(5));
+// console.log(typeOfNum(-5));
+console.log(typeOfNum(0));
