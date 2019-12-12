@@ -230,7 +230,7 @@ console.log(typeOfNum(0));
 // ****** Create a countdown using recursion ****** //
 
 // We have defined a function called countdown with one parameter (n). The function should use recursion to return an array containing the integers n through 1 based on the n parameter. If the function is called with a number less than 1, the function should return an empty array. For example, calling this function with n = 5 should return the array [5, 4, 3, 2, 1]. Your function must use recursion by calling itself and must not use loops of any kind.
-
+/*
 const countdown = n => {
   if (n < 1) {
     return [];
@@ -242,3 +242,16 @@ const countdown = n => {
 };
 
 console.log(countdown(7)); // [7, 6, 5, 4, 3, 2, 1];
+*/
+
+// ****** Create a range of numbers using recursion ****** //
+
+// We have defined a function named rangeOfNum with two parameters. The function should return an array of integers which begins with a number represented by the start parameter and ends with a number represented by the end parameter. The starting number will always be less than or equal to the ending number. Your function must use recursion by calling itself and not use loops of any kind. It should also work for cases where both start and end are the same.
+
+const rangeOfNum = (start, end) => {
+  return start === end ? [start] : [...rangeOfNum(start, end - 1), end];
+};
+
+// console.log(rangeOfNum(5, 9));
+// console.log(rangeOfNum(2, 2));
+console.log(rangeOfNum(3, 12));
